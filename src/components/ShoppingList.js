@@ -1,7 +1,26 @@
 import { plantList } from '../datas/plantList'
 
 function ShoppingList() {
-	return <ul></ul>
+	const categories = plantList.reduce(
+		(acc, elem) =>
+			acc.includes(elem.category) ? acc : acc.concat(elem.category),
+		[]
+	)
+
+	return (
+		<div>
+			<ul>
+				{categories.map((cat) => (
+					<li key={cat}>{cat}</li>
+				))}
+			</ul>
+			<ul>
+				{plantList.map((plant) => (
+					<li key={plant.name}>{plant.name}</li>
+				))}
+			</ul>
+		</div>
+	)
 }
 
 export default ShoppingList
