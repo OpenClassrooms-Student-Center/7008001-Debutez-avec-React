@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/atoulmet-OC-React-Beginners/static/css/main.44bbeb23.chunk.css",
+    "main.js": "/atoulmet-OC-React-Beginners/static/js/main.40d308c6.chunk.js",
+    "main.js.map": "/atoulmet-OC-React-Beginners/static/js/main.40d308c6.chunk.js.map",
+    "runtime-main.js": "/atoulmet-OC-React-Beginners/static/js/runtime-main.706c8d87.js",
+    "runtime-main.js.map": "/atoulmet-OC-React-Beginners/static/js/runtime-main.706c8d87.js.map",
+    "static/js/2.452c5edf.chunk.js": "/atoulmet-OC-React-Beginners/static/js/2.452c5edf.chunk.js",
+    "static/js/2.452c5edf.chunk.js.map": "/atoulmet-OC-React-Beginners/static/js/2.452c5edf.chunk.js.map",
+    "index.html": "/atoulmet-OC-React-Beginners/index.html",
+    "static/css/main.44bbeb23.chunk.css.map": "/atoulmet-OC-React-Beginners/static/css/main.44bbeb23.chunk.css.map",
+    "static/js/2.452c5edf.chunk.js.LICENSE.txt": "/atoulmet-OC-React-Beginners/static/js/2.452c5edf.chunk.js.LICENSE.txt",
+    "static/media/monstera.6257bc6b.jpg": "/atoulmet-OC-React-Beginners/static/media/monstera.6257bc6b.jpg",
+    "static/media/sun.26fb5ace.svg": "/atoulmet-OC-React-Beginners/static/media/sun.26fb5ace.svg",
+    "static/media/water.cceb486f.svg": "/atoulmet-OC-React-Beginners/static/media/water.cceb486f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.706c8d87.js",
+    "static/js/2.452c5edf.chunk.js",
+    "static/css/main.44bbeb23.chunk.css",
+    "static/js/main.40d308c6.chunk.js"
+  ]
+}
