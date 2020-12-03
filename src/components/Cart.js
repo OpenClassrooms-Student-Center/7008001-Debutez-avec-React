@@ -6,7 +6,22 @@ function Cart({ cart, updateCart }) {
 
 	const [isOpen, setIsOpen] = useState(true)
 
-	return isOpen ? (
+	if (!isOpen) {
+		return (
+			<div className='lmj-cart-closed'>
+				<button
+					className='lmj-cart-toggle-button'
+					onClick={() => setIsOpen(true)}
+				>
+					Ouvrir le Panier
+				</button>
+			</div>
+		)
+	}
+
+	const items = Object.keys(cart)
+
+	return (
 		<div className='lmj-cart'>
 			<button
 				className='lmj-cart-toggle-button'
@@ -14,19 +29,29 @@ function Cart({ cart, updateCart }) {
 			>
 				Fermer
 			</button>
-			<h2>Panier</h2>
-			<div>Monstera : {monsteraPrice}€</div>
-			<h3>Total : {monsteraPrice * cart}€</h3>
-			<button onClick={() => updateCart(0)}>Vider le panier</button>
-		</div>
-	) : (
-		<div className='lmj-cart-closed'>
-			<button
-				className='lmj-cart-toggle-button'
-				onClick={() => setIsOpen(true)}
-			>
-				Ouvrir le Panier
-			</button>
+			{items.length > 0 ? (
+				<div>
+					<h2>Panier</h2>
+					<ul>
+						{items.map((item) => (
+							<li key={item}>
+								{cart[item]?.amount} {item} {cart[item]?.price}€
+							</li>
+						))}
+					</ul>
+					<h3>
+						Total :{' '}
+						{items.reduce(
+							(acc, item) => acc + cart[item].amount * cart[item].price,
+							0
+						)}
+						€
+					</h3>
+					<button onClick={() => updateCart({})}>Vider le panier</button>
+				</div>
+			) : (
+				<div>Votre panier est vide</div>
+			)}
 		</div>
 	)
 }

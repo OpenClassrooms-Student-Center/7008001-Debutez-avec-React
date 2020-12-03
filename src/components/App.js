@@ -8,7 +8,7 @@ import ShoppingList from './ShoppingList'
 import '../styles/App.css'
 
 function App() {
-	const [cart, updateCart] = useState(0)
+	const [cart, updateCart] = useState({})
 	return (
 		<div>
 			<Banner>
