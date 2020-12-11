@@ -5,8 +5,8 @@ function Banner() {
 	const title = 'La maison jungle'
 	return (
 		<div className='lmj-banner'>
-			<img src={logo} alt='logo-la-maison-jungle' />
-			<h1>{title}</h1>
+			<img src={logo} alt='logo-la-maison-jungle' className='lmj-logo' />
+			<h1 className='lmj-title'>{title}</h1>
 		</div>
 	)
 }
