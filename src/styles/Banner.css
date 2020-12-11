@@ -6,8 +6,14 @@
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: row;
+	align-items: center;
 }
 
 .lmj-title {
 	padding-left: 32px;
+}
+
+.lmj-logo {
+	height: 45px;
+	width: 45px;
 }
