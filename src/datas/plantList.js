@@ -12,7 +12,8 @@ export const plantList = [
 	{
 		name: 'pothos argenté',
 		category: 'classique',
-		id: '3sd'
+		id: '3sd',
+		specialOffer: true
 	},
 	{
 		name: 'yucca',
@@ -22,7 +23,8 @@ export const plantList = [
 	{
 		name: 'olivier',
 		category: 'extérieur',
-		id: '5pl'
+		id: '5pl',
+		isAvailable: false
 	},
 	{
 		name: 'géranium',
@@ -32,12 +34,14 @@ export const plantList = [
 	{
 		name: 'basilique',
 		category: 'extérieur',
-		id: '7ie'
+		id: '7ie',
+		specialOffer: true
 	},
 	{
 		name: 'aloe',
 		category: 'plante grasse',
-		id: '8fp'
+		id: '8fp',
+		specialOffer: true
 	},
 	{
 		name: 'succulente',
