@@ -21,8 +21,8 @@ function ShoppingList() {
 					<li key={plant.id} className='lmj-plant-item'>
 						{plant.bestSale && <span>🔥</span>}
 						{plant.name}
-						<Care careType='water' care={plant.water} />
-						<Care careType='light' care={plant.light} />
+						<Care careType='water' value={plant.water} />
+						<Care careType='light' value={plant.light} />
 					</li>
 				))}
 			</ul>
