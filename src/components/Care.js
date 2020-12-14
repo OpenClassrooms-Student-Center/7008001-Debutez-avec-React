@@ -1,7 +1,7 @@
 import Sun from '../assets/sun.svg'
 import Water from '../assets/water.svg'
 
-function Care({ care, careType }) {
+function Care({ value, careType }) {
 	const scale = [1, 2, 3]
 	const scaleType =
 		careType === 'light' ? (
@@ -13,7 +13,7 @@ function Care({ care, careType }) {
 	return (
 		<div>
 			{scale.map((elem) =>
-				care >= elem ? <span key={elem.toString()}>{scaleType}</span> : null
+				value >= elem ? <span key={elem.toString()}>{scaleType}</span> : null
 			)}
 		</div>
 	)

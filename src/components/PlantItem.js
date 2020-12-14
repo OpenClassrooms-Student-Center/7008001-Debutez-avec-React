@@ -7,8 +7,8 @@ function PlantItem({ id, cover, name, bestSale, water, light }) {
 			<img className='lmj-plant-item-cover' src={cover} alt={`${name} cover`} />
 			{name}
 			<div>
-				<Care careType='water' care={water} />
-				<Care careType='light' care={light} />
+				<Care careType='water' value={water} />
+				<Care careType='light' value={light} />
 			</div>
 		</li>
 	)
