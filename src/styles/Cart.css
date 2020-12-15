@@ -2,4 +2,33 @@
 	color: white;
 	background-color: #31b572;
 	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 200px;
+}
+
+.lmj-cart-add-button {
+	margin-left: 32px;
+	cursor: pointer;
+}
+
+.lmj-cart-toggle-button {
+	background: none;
+	outline: none;
+	border: none;
+	font-weight: 600;
+	cursor: pointer;
+	align-self: self-start;
+	padding: 0;
+	color: white;
+}
+
+.lmj-cart-closed {
+	padding: 32px;
+	width: 200px;
+}
+
+.lmj-cart-closed > button {
+	color: black;
 }
