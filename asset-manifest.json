@@ -1,23 +1,31 @@
 {
   "files": {
-    "main.css": "/atoulmet-OC-React-Beginners/static/css/main.44bbeb23.chunk.css",
-    "main.js": "/atoulmet-OC-React-Beginners/static/js/main.40d308c6.chunk.js",
-    "main.js.map": "/atoulmet-OC-React-Beginners/static/js/main.40d308c6.chunk.js.map",
-    "runtime-main.js": "/atoulmet-OC-React-Beginners/static/js/runtime-main.706c8d87.js",
-    "runtime-main.js.map": "/atoulmet-OC-React-Beginners/static/js/runtime-main.706c8d87.js.map",
-    "static/js/2.452c5edf.chunk.js": "/atoulmet-OC-React-Beginners/static/js/2.452c5edf.chunk.js",
-    "static/js/2.452c5edf.chunk.js.map": "/atoulmet-OC-React-Beginners/static/js/2.452c5edf.chunk.js.map",
-    "index.html": "/atoulmet-OC-React-Beginners/index.html",
-    "static/css/main.44bbeb23.chunk.css.map": "/atoulmet-OC-React-Beginners/static/css/main.44bbeb23.chunk.css.map",
-    "static/js/2.452c5edf.chunk.js.LICENSE.txt": "/atoulmet-OC-React-Beginners/static/js/2.452c5edf.chunk.js.LICENSE.txt",
-    "static/media/monstera.6257bc6b.jpg": "/atoulmet-OC-React-Beginners/static/media/monstera.6257bc6b.jpg",
-    "static/media/sun.26fb5ace.svg": "/atoulmet-OC-React-Beginners/static/media/sun.26fb5ace.svg",
-    "static/media/water.cceb486f.svg": "/atoulmet-OC-React-Beginners/static/media/water.cceb486f.svg"
+    "main.css": "/static/css/main.28e93fd9.chunk.css",
+    "main.js": "/static/js/main.6996687e.chunk.js",
+    "main.js.map": "/static/js/main.6996687e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.faabbdbf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.faabbdbf.js.map",
+    "static/js/2.7ed17b0b.chunk.js": "/static/js/2.7ed17b0b.chunk.js",
+    "static/js/2.7ed17b0b.chunk.js.map": "/static/js/2.7ed17b0b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.28e93fd9.chunk.css.map": "/static/css/main.28e93fd9.chunk.css.map",
+    "static/js/2.7ed17b0b.chunk.js.LICENSE.txt": "/static/js/2.7ed17b0b.chunk.js.LICENSE.txt",
+    "static/media/basil.be00474e.jpg": "/static/media/basil.be00474e.jpg",
+    "static/media/cactus.a71c2062.jpg": "/static/media/cactus.a71c2062.jpg",
+    "static/media/calathea.455c33e2.jpg": "/static/media/calathea.455c33e2.jpg",
+    "static/media/lyrata.2e915120.jpg": "/static/media/lyrata.2e915120.jpg",
+    "static/media/mint.b83a3d2e.jpg": "/static/media/mint.b83a3d2e.jpg",
+    "static/media/monstera.ec0819da.jpg": "/static/media/monstera.ec0819da.jpg",
+    "static/media/olivier.b2908b40.jpg": "/static/media/olivier.b2908b40.jpg",
+    "static/media/pothos.d72dc0ac.jpg": "/static/media/pothos.d72dc0ac.jpg",
+    "static/media/succulent.f4329849.jpg": "/static/media/succulent.f4329849.jpg",
+    "static/media/sun.26fb5ace.svg": "/static/media/sun.26fb5ace.svg",
+    "static/media/water.cceb486f.svg": "/static/media/water.cceb486f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.706c8d87.js",
-    "static/js/2.452c5edf.chunk.js",
-    "static/css/main.44bbeb23.chunk.css",
-    "static/js/main.40d308c6.chunk.js"
+    "static/js/runtime-main.faabbdbf.js",
+    "static/js/2.7ed17b0b.chunk.js",
+    "static/css/main.28e93fd9.chunk.css",
+    "static/js/main.6996687e.chunk.js"
   ]
 }
