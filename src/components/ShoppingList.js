@@ -9,6 +9,15 @@ function ShoppingList({ cart, updateCart }) {
 		[]
 	)
 
+	function addToCart(name, price) {
+		const items = Object.keys(cart)
+		if (items.includes(name)) {
+			updateCart({ ...cart, [name]: { amount: cart[name].amount + 1, price } })
+		} else {
+			updateCart({ ...cart, [name]: { amount: 1, price } })
+		}
+	}
+
 	return (
 		<div className='lmj-shopping-list'>
 			<ul>
@@ -17,10 +26,16 @@ function ShoppingList({ cart, updateCart }) {
 				))}
 			</ul>
 			<ul className='lmj-plant-list'>
-				{plantList.map(({ id, cover, name, water, light }) => (
+				{plantList.map(({ id, cover, name, water, light, price }) => (
 					<div key={id}>
-						<PlantItem cover={cover} name={name} water={water} light={light} />
-						<button onClick={() => updateCart(cart + 1)}>Ajouter</button>
+						<PlantItem
+							cover={cover}
+							name={name}
+							water={water}
+							light={light}
+							price={price}
+						/>
+						<button onClick={() => addToCart(name, price)}>Ajouter</button>
 					</div>
 				))}
 			</ul>

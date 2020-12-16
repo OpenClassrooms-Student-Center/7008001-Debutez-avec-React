@@ -12,4 +12,16 @@
 	justify-content: center;
 	flex-direction: column;
 	text-transform: capitalize;
+	position: relative;
+}
+
+.lmj-plant-item-price {
+	position: absolute;
+	border-radius: 20px 20px 20px 0;
+	background-color: #31b472;
+	color: white;
+	padding: 15px;
+	right: 0;
+	top: 0;
+	font-weight: 500;
 }
