@@ -5,7 +5,7 @@ export const plantList = [
 		name: 'monstera',
 		category: 'classique',
 		id: '1ed',
-		bestSale: true,
+		isBestSale: true,
 		light: 2,
 		water: 3,
 		cover: monstera
@@ -54,7 +54,7 @@ export const plantList = [
 		name: 'basilique',
 		category: 'extérieur',
 		id: '7ie',
-		bestSale: true,
+		isBestSale: true,
 		light: 2,
 		water: 3,
 		cover: monstera
