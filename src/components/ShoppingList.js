@@ -3,8 +3,8 @@ import '../styles/ShoppingList.css'
 
 function ShoppingList() {
 	const categories = plantList.reduce(
-		(acc, elem) =>
-			acc.includes(elem.category) ? acc : acc.concat(elem.category),
+		(acc, plant) =>
+			acc.includes(plant.category) ? acc : acc.concat(plant.category),
 		[]
 	)
 
@@ -19,7 +19,7 @@ function ShoppingList() {
 				{plantList.map((plant) => (
 					<li key={plant.id} className='lmj-plant-item'>
 						{plant.name}
-						{plant.specialOffer && <div className='lmj-sales'>Soldes</div>}
+						{plant.isSpecialOffer && <div className='lmj-sales'>Soldes</div>}
 					</li>
 				))}
 			</ul>
