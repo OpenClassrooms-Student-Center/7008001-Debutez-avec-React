@@ -4,8 +4,8 @@ import '../styles/ShoppingList.css'
 
 function ShoppingList() {
 	const categories = plantList.reduce(
-		(acc, elem) =>
-			acc.includes(elem.category) ? acc : acc.concat(elem.category),
+		(acc, plant) =>
+			acc.includes(plant.category) ? acc : acc.concat(plant.category),
 		[]
 	)
 
@@ -19,7 +19,7 @@ function ShoppingList() {
 			<ul className='lmj-plant-list'>
 				{plantList.map((plant) => (
 					<li key={plant.id} className='lmj-plant-item'>
-						{plant.bestSale && <span>🔥</span>}
+						{plant.isBestSale && <span>🔥</span>}
 						{plant.name}
 						<Care careType='water' value={plant.water} />
 						<Care careType='light' value={plant.light} />
