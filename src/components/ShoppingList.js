@@ -9,8 +9,8 @@ const plantList = [
 function ShoppingList() {
 	return (
 		<ul>
-			{plantList.map((elem) => (
-				<li key={elem}>{elem}</li>
+			{plantList.map((plant, index) => (
+				<li key={`${plant}-${index}`}>{plant}</li>
 			))}
 		</ul>
 	)
