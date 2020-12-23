@@ -2,8 +2,8 @@ import { plantList } from '../datas/plantList'
 
 function ShoppingList() {
 	const categories = plantList.reduce(
-		(acc, elem) =>
-			acc.includes(elem.category) ? acc : acc.concat(elem.category),
+		(acc, plant) =>
+			acc.includes(plant.category) ? acc : acc.concat(plant.category),
 		[]
 	)
 
