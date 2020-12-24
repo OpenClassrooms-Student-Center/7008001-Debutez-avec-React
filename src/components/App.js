@@ -8,7 +8,7 @@ function App() {
 	return (
 		<div>
 			<Banner>
-				<img src={logo} alt='logo-la-maison-jungle' />
+				<img src={logo} alt='La maison jungle' />
 				<h1 className='lmj-title'>La maison jungle</h1>
 			</Banner>
 			<QuestionForm />
