@@ -8,7 +8,7 @@ import '../styles/Layout.css'
 
 function App() {
 	const savedCart = localStorage.getItem('cart')
-	const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : {})
+	const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : [])
 	useEffect(() => {
 		localStorage.setItem('cart', JSON.stringify(cart))
 	}, [cart])
