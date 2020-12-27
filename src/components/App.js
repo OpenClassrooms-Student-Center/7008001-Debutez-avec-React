@@ -7,7 +7,7 @@ import ShoppingList from './ShoppingList'
 import '../styles/Layout.css'
 
 function App() {
-	const [cart, updateCart] = useState({})
+	const [cart, updateCart] = useState([])
 	return (
 		<div>
 			<Banner>

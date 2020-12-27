@@ -13,11 +13,17 @@ function ShoppingList({ cart, updateCart }) {
 	)
 
 	function addToCart(name, price) {
-		const items = Object.keys(cart)
-		if (items.includes(name)) {
-			updateCart({ ...cart, [name]: { amount: cart[name].amount + 1, price } })
+		const currentPlantSaved = cart.find((plant) => plant.name === name)
+		if (currentPlantSaved) {
+			const cartFilteredCurrentPlant = cart.filter(
+				(plant) => plant.name !== name
+			)
+			updateCart([
+				...cartFilteredCurrentPlant,
+				{ name, price, amount: currentPlantSaved.amount + 1 }
+			])
 		} else {
-			updateCart({ ...cart, [name]: { amount: 1, price } })
+			updateCart([...cart, { name, price, amount: 1 }])
 		}
 	}
 
