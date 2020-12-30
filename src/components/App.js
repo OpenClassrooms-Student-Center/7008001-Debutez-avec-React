@@ -9,6 +9,7 @@ import '../styles/Layout.css'
 
 function App() {
 	const [cart, updateCart] = useState([])
+	const [isFooterShown, updateIsFooterShown] = useState(true)
 	return (
 		<div>
 			<Banner>
@@ -19,8 +20,11 @@ function App() {
 			<div className='lmj-layout-inner'>
 				<Cart cart={cart} updateCart={updateCart} />
 				<ShoppingList cart={cart} updateCart={updateCart} />
+				<button onClick={() => updateIsFooterShown(!isFooterShown)}>
+					Cacher !
+				</button>
 			</div>
-			<Footer />
+			{isFooterShown && <Footer cart={cart} />}
 		</div>
 	)
 }
