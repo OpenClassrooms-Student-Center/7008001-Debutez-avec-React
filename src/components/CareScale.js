@@ -9,8 +9,8 @@ const quantityLabel = {
 	3: 'beaucoup'
 }
 
-function Care({ value, careType }) {
-	const scale = [1, 2, 3]
+function CareScale({ scaleValue, careType }) {
+	const range = [1, 2, 3]
 	const scaleType =
 		careType === 'light' ? (
 			<img src={Sun} alt='sun-icon' />
@@ -22,17 +22,19 @@ function Care({ value, careType }) {
 		<div
 			onClick={() =>
 				alert(
-					`Cette plante requiert ${quantityLabel[value]} ${
+					`Cette plante requiert ${quantityLabel[scaleValue]} ${
 						careType === 'light' ? 'de lumière' : "d'arrosage"
 					}`
 				)
 			}
 		>
-			{scale.map((elem) =>
-				value >= elem ? <span key={elem.toString()}>{scaleType}</span> : null
+			{range.map((rangeElem) =>
+				scaleValue >= rangeElem ? (
+					<span key={rangeElem.toString()}>{scaleType}</span>
+				) : null
 			)}
 		</div>
 	)
 }
 
-export default Care
+export default CareScale
