@@ -1,4 +1,4 @@
-import Care from './Care'
+import CareScale from './CareScale'
 import '../styles/PlantItem.css'
 
 function handleClick(plantName) {
@@ -11,8 +11,8 @@ function PlantItem({ cover, name, water, light }) {
 			<img className='lmj-plant-item-cover' src={cover} alt={`${name} cover`} />
 			{name}
 			<div>
-				<Care careType='water' care={water} />
-				<Care careType='light' care={light} />
+				<CareScale careType='water' scaleValue={water} />
+				<CareScale careType='light' scaleValue={light} />
 			</div>
 		</li>
 	)
