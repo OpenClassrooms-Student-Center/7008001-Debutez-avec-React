@@ -23,7 +23,7 @@ function Cart({ cart, updateCart }) {
 			))}
 
 			<h3>Total : {total}€</h3>
-			<button onClick={() => updateCart(0)}>Vider le panier</button>
+			<button onClick={() => updateCart([])}>Vider le panier</button>
 		</div>
 	) : (
 		<div className='lmj-cart-closed'>
