@@ -10,6 +10,7 @@ Les exercices de cette partie se trouvent sur CodePen.
 
 | Contenu                                                                                                                                     | Begin                                                                     | Solution                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| [Chapitre 1](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7137561-tirez-le-maximum-de-ce-cours)                         | /                                                                         | /                                                              |
 | [Chapitre 2](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7134597-apprehendez-la-logique-de-react)                      | [Début de l'exercice](https://codepen.io/nicolaspatschkowski/pen/ExgrqLV) | [Solution](https://codepen.io/nicolaspatschkowski/pen/vYXVqod) |
 | [Chapitre 3](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7134800-ecrivez-du-code-modulaire-avec-les-composants-en-jsx) | [Début de l'exercice](https://codepen.io/nicolaspatschkowski/pen/JjRmgdJ) | [Solution](https://codepen.io/nicolaspatschkowski/pen/MWjPNaa) |
 
@@ -25,4 +26,14 @@ Les exercices de cette partie se trouvent sur CodePen.
 
 ### Partie 3 - Stockez et récupérez des données avec le state et les effets
 
+| Contenu                                                                                                                                 | Begin                                                                                                        | Solution                                                                                                           |
+| --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| [Chapitre 1](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7137536-mettez-en-place-votre-state-local-avec-usestate)  | [Branche begin](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P3C1-Begin) | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P3C1-Solution) |
+| [Chapitre 2](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7136837-partagez-votre-state-entre-differents-composants) | [Branche begin](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P3C2-Begin) | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P3C2-Solution) |
+| [Chapitre 3](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7137079-declenchez-des-effets-avec-useeffect)             | [Branche begin](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P3C3-Begin) | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P3C3-Solution) |
+
 ### Partie 4 - Conclusion
+
+| Contenu                                                                                                       | Begin | Solution |
+| ------------------------------------------------------------------------------------------------------------- | ----- | -------- |
+| [Chapitre 1](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7137137-revenez-sur-vos-acquis) | /     | /        |
