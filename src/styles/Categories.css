@@ -1,8 +1,48 @@
-.lmj-categories {
+.lmj-category-selection {
 	text-align: center;
-	padding-top: 30px;
+	margin: 20px;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
 }
 
-.lmj-categories-select {
-	margin-right: 15px;
+.lmj-category-select {
+  margin-right: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid #31b572;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #31b572;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.lmj-category-select:hover {
+  border-color: #15b465;
+}
+
+
+.lmj-category-selection button {
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.lmj-category-selection button:hover {
+  background: none;
+  transform: scale(1.05); /* Zoom léger */
+}
+
+.lmj-category-selection button:active {
+  transform: scale(0.95);
+}
+
+.lmj-category-selection button img {
+  width: 30px;
 }

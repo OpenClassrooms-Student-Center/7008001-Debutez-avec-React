@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import '../styles/Layout.css';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
   const savedCart = localStorage.getItem('cart');
   const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : []);
   useEffect(() => {
@@ -19,8 +20,8 @@ function App() {
         <h1 className='lmj-title'>La maison jungle</h1>
       </Banner>
       <div className='lmj-layout-inner'>
-        <Cart cart={cart} updateCart={updateCart} />
-        <ShoppingList cart={cart} updateCart={updateCart} />
+        <Cart cart={cart} updateCart={updateCart} isOpen={isOpen} setIsOpen={setIsOpen} />
+        <ShoppingList cart={cart} updateCart={updateCart} isCartOpen={isOpen} />
       </div>
       <Footer />
     </div>
