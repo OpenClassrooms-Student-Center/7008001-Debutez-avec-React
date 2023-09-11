@@ -4,7 +4,7 @@ import '../styles/ShoppingList.css';
 import Categories from "./Categories";
 import PlantItem from "./PlantItem";
 
-function ShoppingList({ cart, updateCart }) {
+function ShoppingList({ cart, updateCart, isCartOpen }) {
   const [activeCategory, setActiveCategory] = useState('');
   const categories = plantList.reduce(
     (acc, plant) =>
@@ -27,7 +27,7 @@ function ShoppingList({ cart, updateCart }) {
     }
   }
   return (
-    <div className='lmj-shopping-list'>
+    <div className={`lmj-shopping-list ${isCartOpen ? 'with-cart' : ''}`}>
       <Categories
         activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}
@@ -43,8 +43,8 @@ function ShoppingList({ cart, updateCart }) {
                 water={water}
                 light={light}
                 price={price}
+                addToCart={() => addToCart(name, price)}
               />
-              <button onClick={() => addToCart(name, price)}>Ajouter</button>
             </div>
           ) : null
         )}

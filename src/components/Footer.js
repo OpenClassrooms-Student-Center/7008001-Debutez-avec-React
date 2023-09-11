@@ -2,32 +2,38 @@ import { useState } from 'react';
 import '../styles/Footer.css';
 
 function Footer() {
-  const [inputValue, setInputValue] = useState('');
+  const [email, setEmail] = useState('');
 
-  function handleInput(e) {
-    setInputValue(e.target.value)
+  function handleEmailChange(e) {
+    setEmail(e.target.value);
   }
 
-  function handleBlur() {
-    if (!inputValue.includes('@')) {
-      alert("Attention, il n'y a pas d'@, ceci n'est pas une adresse valide 😥");
-    }
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(`Inscription à la newsletter avec l'adresse e-mail : ${email}`)
   }
 
   return (
     <footer className='lmj-footer'>
-      <div className='lmj-footer-elem'>
-        Pour les passionné·e·s de plantes 🌿🌱🌵
+      <div className='lmj-footer-newsletter'>
+        <h2>Inscrivez-vous à notre newsletter</h2>
+        <p>Recevez des offres spéciales et des mises à jour directement dans votre boîte de réception.</p>
+        <form onSubmit={handleSubmit}>
+          <input
+            type='email'
+            placeholder='Entrez votre adresse mail'
+            value={email}
+            onChange={handleEmailChange}
+            required
+          />
+          <button type="submit">S'inscrire</button>
+        </form>
       </div>
-      <div className='lmj-footer-elem'>Laissez-nous votre mail :</div>
-      <input
-        placeholder='Entrez votre mail'
-        onChange={handleInput}
-        value={inputValue}
-        onBlur={handleBlur}
-      />
+      <div className="lmj-footer-slogan">
+        <p>Transformez votre espace en un jardin de rêve avec nos plantes exceptionnelles.</p>
+      </div>
     </footer>
-  )
+  );
 }
 
 export default Footer

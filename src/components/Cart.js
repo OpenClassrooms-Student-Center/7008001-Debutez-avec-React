@@ -1,15 +1,16 @@
-import { useEffect, useState } from 'react';
+import cartIcon from '../assets/images/cart.svg';
+import closeIcon from '../assets/images/left-arrow.svg';
+import { useEffect } from 'react';
 import '../styles/Cart.css';
 
-function Cart({ cart, updateCart }) {
-  const [isOpen, setIsOpen] = useState(true);
+function Cart({ cart, updateCart, isOpen, setIsOpen }) {
   const total = cart.reduce(
     (acc, plantType) => acc + plantType.amount * plantType.price,
     0
   );
   useEffect(() => {
-		document.title = `LMJ: ${total}€ d'achats`;
-	}, [total]);
+    document.title = `La maison jungle | ${total}€ d'achats`;
+  }, [total]);
 
   return isOpen ? (
     <div className='lmj-cart'>
@@ -17,34 +18,32 @@ function Cart({ cart, updateCart }) {
         className='lmj-cart-toggle-button'
         onClick={() => setIsOpen(false)}
       >
-        Fermer
+        <img src={closeIcon} alt={closeIcon} />
       </button>
       {cart.length > 0 ? (
         <div>
           <h2>Panier</h2>
           <ul>
             {cart.map(({ name, price, amount }, index) => (
-              <div key={`${name}-${index}`}>
+              <div key={`${name}-${index}`} >
                 {name} {price}€ x {amount}
               </div>
             ))}
           </ul>
           <h3>Total :{total}€</h3>
-          <button onClick={() => updateCart([])}>Vider le panier</button>
+          <button className='lmj-cart-button-clean' onClick={() => updateCart([])}>Vider le panier</button>
         </div>
       ) : (
-        <div>Votre panier est vide</div>
+        <p>Votre panier est vide</p>
       )}
     </div>
   ) : (
-    <div className='lmj-cart-closed'>
       <button
-        className='lmj-cart-toggle-button'
+        className='lmj-cart-open'
         onClick={() => setIsOpen(true)}
       >
-        Ouvrir le Panier
+        <img src={cartIcon} alt={cartIcon} />
       </button>
-    </div>
   );
 }
 
