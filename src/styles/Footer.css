@@ -1,0 +1,64 @@
+.lmj-footer {
+  background-color: #fff;
+  color: #000;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  border-top: solid 3px #000;
+  font-weight: 500;
+}
+
+.lmj-footer-newsletter {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.lmj-footer-newsletter h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.lmj-footer-newsletter p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.lmj-footer-newsletter input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.lmj-footer-newsletter button[type="submit"] {
+  background-color: #31b572;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lmj-footer-slogan p {
+  font-style: italic;
+  font-size: 12px;
+  color: #555;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .lmj-footer {
+    padding: 20px; /* Réduire la marge intérieure */
+  }
+
+  .lmj-footer-newsletter {
+    max-width: 100%;
+  }
+}

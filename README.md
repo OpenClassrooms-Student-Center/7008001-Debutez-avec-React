@@ -1,39 +1,70 @@
-# OpenClassrooms - Débutez avec React
+# Getting Started with Create React App
 
-Ce repo contient le code de base pour les exercices que vous trouverez dans le cours [OpenClassrooms - Débutez avec React](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Exercices
+## Available Scripts
 
-### Partie 1 - Initiez-vous aux principes de React
+In the project directory, you can run:
 
-Les exercices de cette partie se trouvent sur CodePen.
+### `npm start`
 
-| Contenu                                                                                                                                     | Begin                                                                     | Solution                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| [Chapitre 1](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7137561-tirez-le-maximum-de-ce-cours)                         | /                                                                         | /                                                              |
-| [Chapitre 2](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7134597-apprehendez-la-logique-de-react)                      | [Début de l'exercice](https://codepen.io/nicolaspatschkowski/pen/ExgrqLV) | [Solution](https://codepen.io/nicolaspatschkowski/pen/vYXVqod) |
-| [Chapitre 3](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7134800-ecrivez-du-code-modulaire-avec-les-composants-en-jsx) | [Début de l'exercice](https://codepen.io/nicolaspatschkowski/pen/JjRmgdJ) | [Solution](https://codepen.io/nicolaspatschkowski/pen/MWjPNaa) |
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Partie 2 - Créez votre première application complète avec Create React App
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-| Contenu                                                                                                                                                    | Begin                                                                                                                                                                                                             | Solution                                                                                                                                                                                                                      |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Chapitre 1](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7135204-prenez-en-main-create-react-app)                                     | /                                                                                                                                                                                                                 | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P2C1-Solution)                                                                                                            |
-| [Chapitre 2](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7135359-incorporez-du-style-et-des-assets-a-votre-projet)                    | [Branche begin](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P2C2-Begin)                                                                                                      | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P2C2-Solution)                                                                                                            |
-| [Chapitre 3](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7135593-gagnez-en-temps-et-en-efficacite-grace-aux-listes-et-aux-conditions) | [Begin 1](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P2C3-Begin-1) [Begin 2](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P2C3-Begin-2) | [Solution 1](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P2C3-Solution-1) [Solution 2](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P2C3-Solution-2) |
-| [Chapitre 4](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7135822-reutilisez-vos-composants-avec-les-props)                            | [Branche begin](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P2C4-Begin)                                                                                                      | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P2C4-Solution)                                                                                                            |
-| [Chapitre 5](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7136084-interagissez-avec-vos-composants-grace-aux-evenements)               | [Branche begin](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P2C5-Begin)                                                                                                      | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P2C5-Solution)                                                                                                            |
+### `npm test`
 
-### Partie 3 - Stockez et récupérez des données avec le state et les effets
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-| Contenu                                                                                                                                 | Begin                                                                                                        | Solution                                                                                                           |
-| --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| [Chapitre 1](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7137536-mettez-en-place-votre-state-local-avec-usestate)  | [Branche begin](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P3C1-Begin) | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P3C1-Solution) |
-| [Chapitre 2](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7136837-partagez-votre-state-entre-differents-composants) | [Branche begin](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P3C2-Begin) | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P3C2-Solution) |
-| [Chapitre 3](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7137079-declenchez-des-effets-avec-useeffect)             | [Branche begin](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P3C3-Begin) | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7008001-Debutez-avec-React/tree/P3C3-Solution) |
+### `npm run build`
 
-### Partie 4 - Conclusion
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-| Contenu                                                                                                       | Begin | Solution |
-| ------------------------------------------------------------------------------------------------------------- | ----- | -------- |
-| [Chapitre 1](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7137137-revenez-sur-vos-acquis) | /     | /        |
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

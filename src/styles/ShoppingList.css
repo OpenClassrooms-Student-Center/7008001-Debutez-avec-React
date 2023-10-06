@@ -1,0 +1,24 @@
+.lmj-shopping-list {
+  position: relative;
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+.lmj-shopping-list.with-cart {
+  width: calc(100% - 300px);
+}
+
+.lmj-plant-list {
+	list-style-type: none;
+	padding: 32px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .lmj-shopping-list.with-cart {
+    width: calc(100% - 100%); /* Réduisez la largeur de la liste lorsque le panier est ouvert */
+    height: 0;
+  }
+}
